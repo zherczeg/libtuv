@@ -44,11 +44,11 @@
 #include <stdio.h>
 #include <stdlib.h> /* malloc */
 #include <string.h> /* memset */
-#include <unistd.h> /* usleep */
 
 #if defined(_WIN32)
 # include <malloc.h> /* malloc */
 #else
+# include <unistd.h> /* usleep */
 # include <net/if.h> /* if_nametoindex */
 #endif
 
